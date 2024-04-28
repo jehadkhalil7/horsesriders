@@ -4,16 +4,12 @@ import { HORSE, Servises, coachs } from '../res/Data'
 import ScreenNames from '../../routes/screenNames'
 import { useNavigation } from '@react-navigation/native'
 import Coashitem from './Coashitem'
-
+import Images from '../assets/Images/images'
 const HorseNormalization = (props) => {
-
   const { navigation } = props
-
   const [coachsArr, setCoachsArr] = useState([])
-
   const { id } = props.route.params;
   console.log("id: ", id);
-
   // return (
   //   // <Carltem
   //   //   img={car.img}
@@ -30,8 +26,6 @@ const HorseNormalization = (props) => {
   //       const goToHorse=()=>{
   //         navigation.navigate(ScreenNames.HorseNormalization)
   //       }
-
-
   // return (
   // <Carltem
   //   img={car.img}
@@ -40,51 +34,38 @@ const HorseNormalization = (props) => {
   //   <Text style={styles.serviceText}>
   //     {car.item.text}
   //   // style={styles.container5}
-
   //   </Text>
   //   <Image resizeMode='contain' style={styles.serviceImage} source={car.item.img} />
   // </TouchableOpacity>
   // );
-
   const renderServices = ({ item }) => {
     return (
       <Coashitem data={item} />
     )
   };
-
-
   const getCoachs = () => {
     const filterdArr = coachs.filter(coach => !!coach.expertise.find(ex => ex.id === id))
-
     console.log("filterdArr: ", filterdArr);
-
     setCoachsArr([...filterdArr])
   }
-
-
   useEffect(() => {
     getCoachs()
   }, [])
-
-
-
   return (
-    <View>
-      <View style={styles.container}>
-        {coachsArr.length > 0 && <FlatList
-          data={coachsArr}
-          renderItem={renderServices}
-          contentContainerStyle={styles.flatList}
-        />}
-      </View>
+    <View style={styles.container}>
+      <FlatList
+        data={coachsArr}
+        renderItem={renderServices}
+        contentContainerStyle={styles.flatList}
+      />
     </View>
-
   )
 }
-
-
 export default HorseNormalization
 const styles = StyleSheet.create({
+  container: {
+    flex: 1
+  },
   serviceContainer: {
     width: 400,
     height: 150,
@@ -107,5 +88,5 @@ const styles = StyleSheet.create({
     justifyContent: 'space-around',
     alignItems: 'center',
     padding: 10
-  }
-});
+  },
+}); 

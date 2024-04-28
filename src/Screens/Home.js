@@ -6,27 +6,22 @@ import Carltem from '../components/carltem'
 import Images from '../assets/Images/images'
 import { useNavigation } from '@react-navigation/native'
 import ScreenNames from '../../routes/screenNames'
-
 const Home = () => {
-const navigation=useNavigation()
-
-  const goToHorse=(ItemData)=>{
-    navigation.navigate(ScreenNames.HorseNormalization , {id : ItemData.id})
+  const navigation = useNavigation()
+  const goToHorse = (ItemData) => {
+    navigation.navigate(ScreenNames.HorseNormalization, { id: ItemData.id })
   };
-
-
-  const renderServices = ({item}) => {    
+  const renderServices = ({ item }) => {
     return (
-      <TouchableOpacity onPress={()=> goToHorse(item?.data)} style={styles.serviceContainer}>
+      <TouchableOpacity onPress={() => goToHorse(item?.data)} style={styles.serviceContainer}>
         <Text style={styles.serviceText}>
           {item.data?.text}
         </Text>
         <Image resizeMode='contain' style={styles.serviceImage} source={item.img} />
+        <Image style={styles.serviceImage} source={Images.starEmpty()} />
       </TouchableOpacity>
     );
   };
-
-
   return (
     <View>
       <View style={styles.container}>
@@ -39,12 +34,9 @@ const navigation=useNavigation()
         {/* <ServirseComponent /> */}
       </View>
     </View>
-
   )
 }
-
 export default Home
-
 const styles = StyleSheet.create({
   serviceContainer: {
     width: 400,
@@ -54,13 +46,20 @@ const styles = StyleSheet.create({
     backgroundColor: "#c4be91"
   },
   serviceText:
-    { fontSize: 20,
-      right:10,
-      top: 10,
-     color: 'black',
-     fontStyle: 'italic'
-   },
+  {
+    fontSize: 20,
+    right: 10,
+    top: 10,
+    color: 'black',
+    fontStyle: 'italic'
+  },
   serviceImage:
-   { width: 150,
-     height: 100 }
+  {
+    width: 150,
+    height: 100,
+  },
+  starEmpty: {
+    width: 30,
+    height: 30,
+  },
 })

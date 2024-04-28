@@ -1,60 +1,56 @@
 import Images from "../assets/Images/images"
-
-
 export const expertise = {
-   
     HorseNormalization: {
         id: 1,
         text: 'تطبيع خيل',
-        value: 'Horse normalization',  
+        value: 'Horse normalization',
     },
     WesternRiding: {
         id: 2,
         text: 'ركوب غربي',
-        value: 'Western riding',  
+        value: 'Western riding',
     },
     AdvancedHorseTraining: {
         id: 3,
         text: ' تدريب سبق خيل (ركوب غربي)',
-        value: 'Advanced horse training (western riding)',  
+        value: 'Advanced horse training (western riding)',
     },
     HorseTrainingForCamels: {
         id: 4,
         text: ' تدريب خيل للجمال',
-        value: ' Horse training for camels',  
+        value: ' Horse training for camels',
     },
     HorseHouse: {
         id: 5,
         text: ' بيت خيل ',
-        value: 'Horse house',  
+        value: 'Horse house',
     },
     SellingHorses: {
         id: 6,
         text: 'بيع خيول',
-        value: 'Selling horses',  
+        value: 'Selling horses',
     },
     TherapeuticHorseRiding: {
         id: 7,
         text: 'ركوب خيل علاجي',
-        value: 'Therapeutic horse riding',  
+        value: 'Therapeutic horse riding',
     },
     BenefitsOfHorseRiding: {
         id: 8,
         text: 'فوائد ركوب الخيل',
-        value: ' Benefits of horse riding',  
+        value: ' Benefits of horse riding',
     },
     hourseTrip: {
         id: 9,
         text: 'رحله مع خيل ',
-        value: 'hourse trip',  
+        value: 'hourse trip',
     },
     SchoolEventsReservationInquiries: {
         id: 10,
         text: ' فعاليات مدرسيه استفسارات للحجز',
-        value: 'School events, reservation inquiries',  
+        value: 'School events, reservation inquiries',
     },
 }
-
 export const Servises = [
     {
         text: 'تطبيع خيل',
@@ -108,59 +104,66 @@ export const Servises = [
         img: Images.sports(),
     },
 ]
-
-
-
-
 export const coachs = [
     {
         name: 'محمد1 ',
         img: Images.horse(),
-        avatar: " " ,
+        avatar: " ",
         qualifications: ['اا', 'مم'], //shehadat 
-        expertise: [expertise.hourseTrip , expertise.BenefitsOfHorseRiding, expertise.AdvancedHorseTraining,expertise.HorseHouse,expertise.HorseNormalization,expertise.HorseTrainingForCamels,expertise.SchoolEventsReservationInquiries,expertise.SellingHorses,expertise.TherapeuticHorseRiding,expertise.WesternRiding,] // tadreeb
-        
+        expertise: [expertise.hourseTrip, expertise.BenefitsOfHorseRiding, expertise.AdvancedHorseTraining, expertise.HorseHouse, expertise.HorseNormalization, expertise.HorseTrainingForCamels, expertise.SchoolEventsReservationInquiries, expertise.SellingHorses, expertise.TherapeuticHorseRiding, expertise.WesternRiding,] ,// tadreeb
+        rating:2,
     },
     {
-        name: 'محمد2',
+        name: 'محمد2', 
         img: Images.horse(),
         avatar: '',
         qualifications: ['', ''], //shehadat 
-        expertise: [expertise.hourseTrip , expertise.BenefitsOfHorseRiding, expertise.AdvancedHorseTraining,expertise.HorseHouse,expertise.HorseNormalization,expertise.HorseTrainingForCamels,expertise.SchoolEventsReservationInquiries,expertise.SellingHorses,expertise.TherapeuticHorseRiding,expertise.WesternRiding,] // tadreeb
+        expertise: [expertise.hourseTrip, expertise.BenefitsOfHorseRiding, expertise.AdvancedHorseTraining, expertise.HorseHouse, expertise.HorseNormalization, expertise.HorseTrainingForCamels, expertise.SchoolEventsReservationInquiries, expertise.SellingHorses, expertise.TherapeuticHorseRiding, expertise.WesternRiding,] ,//tadreeb
+        rating:1,
     },
     {
         name: 'محمد3',
         img: Images.horse(),
         avatar: '',
         qualifications: ['', ''], //shehadat 
-        expertise: [expertise.hourseTrip , expertise.BenefitsOfHorseRiding, expertise.AdvancedHorseTraining,expertise.HorseHouse,expertise.HorseNormalization,expertise.HorseTrainingForCamels,expertise.SchoolEventsReservationInquiries,expertise.SellingHorses,expertise.TherapeuticHorseRiding,expertise.WesternRiding,] ,  // tadreeb
+        expertise: [expertise.hourseTrip, expertise.BenefitsOfHorseRiding, expertise.AdvancedHorseTraining, expertise.HorseHouse, expertise.HorseNormalization, expertise.HorseTrainingForCamels, expertise.SchoolEventsReservationInquiries, expertise.SellingHorses, expertise.TherapeuticHorseRiding, expertise.WesternRiding,], // tadreeb
+        rating:5,
+    
     },
     {
         name: 'محمد4',
         img: Images.horse(),
         avatar: '',
         qualifications: ['', ''], //shehadat 
-        expertise: [expertise.hourseTrip , expertise.BenefitsOfHorseRiding, expertise.AdvancedHorseTraining,expertise.HorseHouse,expertise.HorseNormalization,expertise.HorseTrainingForCamels,expertise.SchoolEventsReservationInquiries,expertise.SellingHorses,expertise.TherapeuticHorseRiding,expertise.WesternRiding,] // tadreeb
+        expertise: [expertise.hourseTrip, expertise.BenefitsOfHorseRiding, expertise.AdvancedHorseTraining, expertise.HorseHouse, expertise.HorseNormalization, expertise.HorseTrainingForCamels, expertise.SchoolEventsReservationInquiries, expertise.SellingHorses, expertise.TherapeuticHorseRiding, expertise.WesternRiding,] ,// tadreeb
+        rating:4,
+
     },
     {
         name: 'محمد5',
         img: Images.horse(),
         avatar: '',
         qualifications: ['', ''], //shehadat 
-        expertise: [expertise.hourseTrip , expertise.BenefitsOfHorseRiding, expertise.AdvancedHorseTraining,expertise.HorseHouse,expertise.HorseNormalization,expertise.HorseTrainingForCamels,expertise.SchoolEventsReservationInquiries,expertise.SellingHorses,expertise.TherapeuticHorseRiding,expertise.WesternRiding,] // tadreeb
+        expertise: [expertise.hourseTrip, expertise.BenefitsOfHorseRiding, expertise.AdvancedHorseTraining, expertise.HorseHouse, expertise.HorseNormalization, expertise.HorseTrainingForCamels, expertise.SchoolEventsReservationInquiries, expertise.SellingHorses, expertise.TherapeuticHorseRiding, expertise.WesternRiding,] ,// tadreeb
+        rating:3,
+
     },
     {
         name: 'محمد6',
         img: Images.horse(),
         avatar: '',
         qualifications: ['', ''], //shehadat 
-        expertise: [expertise.hourseTrip , expertise.BenefitsOfHorseRiding, expertise.AdvancedHorseTraining,expertise.HorseHouse,expertise.HorseNormalization,expertise.HorseTrainingForCamels,expertise.SchoolEventsReservationInquiries,expertise.SellingHorses,expertise.TherapeuticHorseRiding,expertise.WesternRiding,] // tadreeb
+        expertise: [expertise.hourseTrip, expertise.BenefitsOfHorseRiding, expertise.AdvancedHorseTraining, expertise.HorseHouse, expertise.HorseNormalization, expertise.HorseTrainingForCamels, expertise.SchoolEventsReservationInquiries, expertise.SellingHorses, expertise.TherapeuticHorseRiding, expertise.WesternRiding,] ,// tadreeb
+        rating:0,
+
     },
     {
         name: 'محمد7',
         img: Images.horse(),
         avatar: '',
         qualifications: ['', ''], //shehadat 
-        expertise: [expertise.hourseTrip , expertise.BenefitsOfHorseRiding, expertise.AdvancedHorseTraining,expertise.HorseHouse,expertise.HorseNormalization,expertise.HorseTrainingForCamels,expertise.SchoolEventsReservationInquiries,expertise.SellingHorses,expertise.TherapeuticHorseRiding,expertise.WesternRiding,] // tadreeb
+        expertise: [expertise.hourseTrip, expertise.BenefitsOfHorseRiding, expertise.AdvancedHorseTraining, expertise.HorseHouse, expertise.HorseNormalization, expertise.HorseTrainingForCamels, expertise.SchoolEventsReservationInquiries, expertise.SellingHorses, expertise.TherapeuticHorseRiding, expertise.WesternRiding,], // tadreeb
+        rating:4,
+
     },
 ] 
