@@ -9,12 +9,7 @@ const Carltem = props => {
 
   const navHome = ( ) => {
     navigation.navigate(ScreenNames.home);
-
-
   }
-
-
-
 
   const onItemPress = () => {
     setLike(like + 1)

@@ -9,19 +9,33 @@ const Coashitem = (props) => {
     const { data } = props
     const navigation = useNavigation()
     console.log("data from coach item", props);
+
+
     const renderName = () => {
-        // const namec = data.name.map(na => {
-        //     return <Text>{na} </Text>
-        // })
-        return <Text style={styles.name5}>{data?.name || ''}
-        </Text>
+        return <Text style={styles.name5}>{data?.name || ''}</Text>
     }
+
+
     const renderQualifications = () => {
         const qualificationsC = data?.qualifications?.map(qu => {
             return <Text style={styles.qualifications5}>{qu}</Text>
         })
         return qualificationsC || <Text></Text>
     }
+
+    const renderStars = () => {
+        const starArr = [] ; 
+        for(var i = 0 ; i < data.rating; i++) {
+            starArr.push(<Image style={styles.star} source={Images.starFull()} />)
+        }
+        
+        for(var i = data.rating ; i< 5; i++){
+            starArr.push(<Image style={styles.star} source={Images.starEmpty()}/>)
+        }
+       return starArr
+    }
+
+
     const goToJehad = () => {
         const obj = {
             name: data.name,
@@ -29,9 +43,11 @@ const Coashitem = (props) => {
         }
         navigation.navigate(ScreenNames.jehad, { ...obj })
     }
+
+
     return (
         <Pressable onPress={goToJehad} style={styles.card} >
-            <View style={styles.Container} >
+            <View style={styles.Container} > 
                 <Image resizeMode='contain' style={styles.serviceImage} source={data?.img} />
                 <View style={styles.name3} >
                     {renderName()}
@@ -39,11 +55,13 @@ const Coashitem = (props) => {
                 </View>
             </View>
             <View style={styles.star2}>
+                {/* <Image style={styles.star} source={Images.starEmpty()} />
                 <Image style={styles.star} source={Images.starEmpty()} />
                 <Image style={styles.star} source={Images.starEmpty()} />
                 <Image style={styles.star} source={Images.starEmpty()} />
-                <Image style={styles.star} source={Images.starEmpty()} />
-                <Image style={styles.star} source={Images.starEmpty()} />
+                <Image style={styles.star} source={Images.starEmpty()} /> */}
+
+                {renderStars()}
             </View>
         </Pressable>
     )

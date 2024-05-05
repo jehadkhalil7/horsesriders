@@ -18,7 +18,6 @@ const Home = () => {
           {item.data?.text}
         </Text>
         <Image resizeMode='contain' style={styles.serviceImage} source={item.img} />
-        <Image style={styles.serviceImage} source={Images.starEmpty()} />
       </TouchableOpacity>
     );
   };
