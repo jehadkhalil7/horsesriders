@@ -37,11 +37,8 @@ const Coashitem = (props) => {
 
 
     const goToJehad = () => {
-        const obj = {
-            name: data.name,
-            phone: data.phone,
-        }
-        navigation.navigate(ScreenNames.jehad, { ...obj })
+      
+        navigation.navigate(ScreenNames.CoachProfile, { ...data })
     }
 
 

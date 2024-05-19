@@ -2,7 +2,7 @@ const ScreenNames = {
   splash: 'Splash',
   home: 'خيل وخيال',
   HorseNormalization:'HorseNormalization',
-  jehad:"jehad"
+  CoachProfile:'CoachProfile'
 };
 
 export default ScreenNames;

@@ -5,7 +5,7 @@ import Splash from '../src/Screens/Splash';
 import Home from '../src/Screens/Home';
 import ScreenNames from './screenNames';
 import HorseNormalization from '../src/Screens/HorseNormalization';
-import Jehad from '../src/Screens/Jehad';
+import CoachProfile from '../src/Screens/CoachProfile';
 
 const MainNavigation = () => {
   const Stack = createNativeStackNavigator();
@@ -16,7 +16,7 @@ const MainNavigation = () => {
         <Stack.Screen name={ScreenNames.splash} component={Splash} />
         <Stack.Screen name={ScreenNames.home} component={Home} options={{headerStyle:{backgroundColor:'#fffdde'}}}/>
         <Stack.Screen name={ScreenNames.HorseNormalization} component={HorseNormalization} options={{headerStyle:{backgroundColor:'#fffdde'}}}/>
-        <Stack.Screen name={ScreenNames.jehad} component={Jehad} options={{headerStyle:{backgroundColor:'#fffdde'} , headerShown:false}}/>
+        <Stack.Screen name={ScreenNames.CoachProfile} component={CoachProfile} options={{headerStyle:{backgroundColor:'#fffdde'}}}/>
       </Stack.Navigator>
     </NavigationContainer>
   );
