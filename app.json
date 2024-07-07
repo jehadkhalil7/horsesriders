@@ -1,4 +1,11 @@
 {
   "name": "horsesriders",
-  "displayName": "horsesriders"
+  "displayName": "horsesriders",
+  "expo": {
+    "extra": {
+      "eas": {
+        "projectId": "81c5a2c5-7606-40f1-b672-5d3e95589330"
+      }
+    }
+  }
 }
